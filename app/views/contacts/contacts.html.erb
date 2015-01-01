@@ -1,0 +1,208 @@
+
+
+
+
+		<div id="ContactsBin" class="row">
+		
+		<div id="UsersList" class="col-sm-4">	
+			<div class="span4 panel panel-default">
+				  <!-- Default panel contents -->
+				  <div class="panel-heading">Contacts</div>				
+				  <!-- List group -->				  
+
+				 <script>
+					var selected_contact_id = 1;
+					var last_selected_contact_id = 1;
+
+					function select(name) { 
+						if(name.id=="contact_"+(selected_contact_id)) { name.className='list-group-item active'};
+						var removeOld = document.getElementById("contact_"+(last_selected_contact_id));
+						removeOld.className = 'list-group-item';
+						last_selected_contact_id = (selected_contact_id);					
+					}
+				</script>
+
+
+				  <ul style="max-height:350px; overflow:auto; overflow-x: hidden;" class="list-group">
+				    <li id="contact_1" onclick="selected_contact_id = 1; select(this);" class="list-group-item active">Oliver Garcia</li>
+				    <li id="contact_2" onclick="selected_contact_id = 2; select(this);" class="list-group-item">Joshua Stowers</li>
+				    <li id="contact_3" onclick="selected_contact_id = 3; select(this);" class="list-group-item">Jeffrey Baker</li>
+				    <li id="contact_4" onclick="selected_contact_id = 4; select(this);" class="list-group-item">Lleane Rodriguez</li>
+				    <li id="contact_5" onclick="selected_contact_id = 5; select(this);" class="list-group-item">Evan Gray</li>
+				    <li id="contact_6" onclick="selected_contact_id = 6; select(this);" class="list-group-item">Batman</li>
+				    <li id="contact_7" onclick="selected_contact_id = 7; select(this);" class="list-group-item">Will Smith</li>
+				    <li id="contact_8" onclick="selected_contact_id = 8; select(this);" class="list-group-item">Joe Biden</li>
+				    <li id="contact_9" onclick="selected_contact_id = 9; select(this);" class="list-group-item">Aretha Franklin</li>
+				    <li id="contact_10" onclick="selected_contact_id = 10; select(this);" class="list-group-item">Cho Chang</li>
+				    <li id="contact_11" onclick="selected_contact_id = 11; select(this);" class="list-group-item">Spiderman</li>
+				    <li id="contact_12" onclick="selected_contact_id = 12; select(this);" class="list-group-item">Christopher Robin</li>
+				    <li id="contact_13" onclick="selected_contact_id = 13; select(this);" class="list-group-item">Nagisa Isa</li>
+				    <li id="contact_14" onclick="selected_contact_id = 14; select(this);" class="list-group-item">William Tell</li>
+				    <li id="contact_14" onclick="this.className='list-group-item active'; select();" class="list-group-item">William Tell</li>
+				  </ul>
+				  
+				  
+				  
+
+				
+				<div class="panel-footer">
+					<!--<button type="button" class="btn btn-danger">Delete</button>-->
+					<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#addContactModal">New</button>
+				</div>
+
+			</div>			
+		</div>
+
+
+
+
+
+		<div id="UsersInfo" class="col-sm-8">	
+			<div class="span4 panel panel-default">
+				  <!-- Default panel contents -->
+				  <div class="panel-heading">Info</div>
+
+					
+					  <!-- List group -->
+					  <ul style="max-height:350px; overflow:auto; overflow-x: hidden;" class="list-group">
+					  
+				  		<div class="panel-body">
+				  			<div class="row">
+				  				<div class="col-xs-8">
+					  				<h3>Contact Name</h3>
+					  				<p>Notes: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p>
+				  				</div>
+					  			<div class="col-xs-4">
+						  			<%=image_tag("tempContactImage.jpg", alt: "Image", width: '100%', class: 'img-rounded img-contact')%>						  		
+						  		</div>
+						  	</div>	  		
+					  	</div>					  
+					  
+					    <li class="list-group-item"><b>Email: </b>stowers.joshua@live.com</li>
+					    <li class="list-group-item"><b>Email: </b>stowers.joshua@Gmail.com</li>				    
+					    <li class="list-group-item"><b>Phone: </b>(210) 846 3998</li>
+					    <li class="list-group-item"><b>Mobile: </b>(210) 693 0701</li>					    
+					    <li class="list-group-item"><b>Address: </b>1830 Palmer View</li>	
+					    <li class="list-group-item"><b>Company: </b>SquareSuits</li>
+					  </ul>
+					  
+					  
+					<div class="panel-footer">
+						<!--<button type="button" class="btn btn-danger">Delete</button>-->
+						<button type="button" class="btn btn-danger btn-sm pull-right">Delete</button>						
+						<button type="button" class="btn btn-default btn-sm">Edit</button>
+					</div>
+			
+			</div>
+			
+		</div><!--/#UsersInfo-->
+
+		</div><!--/.row-->
+
+
+
+<!---------------------Temp: Comments area------------------->
+	<div class="row">	
+		<div class="col-sm-12">	
+			<div class="span12 panel panel-default">
+				  <!-- Default panel contents -->
+				  <div class="panel-heading">Ideas and Comments</div>				
+				  <!-- List group -->				  
+
+
+				  <ul style="max-height:200px; overflow:auto; overflow-x: hidden;" class="list-group">
+					  <li class="list-group-item">Add list items in my HTML with comments and stuff.</li>
+					  <li class="list-group-item">Wow, this is pathetic!</li>
+					  <li class="list-group-item">Keep at it, Josh, you're so awesome!</li>
+					  <li class="list-group-item">FIRST!</li>
+				  </ul>			  
+			</div>			
+		</div>
+	</div>	
+<!---------------------Temp: Comments area END------------------->
+
+
+    <!--</div> /.container -->
+
+
+<!-- New Contact Modal -->
+<div class="modal fade" id="addContactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" >Add a Contact</h4>
+      </div>
+      <div name="main" id="main" style="max-height:350px; overflow:auto; overflow-x:hidden; " class="modal-body">
+
+			
+			<div class="container">
+			    <div class="row clearfix">
+					<div class="col-md-12 column">	
+						
+						<input type="text" class="form-control" placeholder="First name">
+						<br />
+						<input type="text" class="form-control" placeholder="Middle name">
+						<br />
+						<input type="text" class="form-control" placeholder="Last name">
+						<br />
+						<textarea placeholder="Notes" class="form-control" id="notes"></textarea>
+						<br />
+						<table class="table table-bordered table-hover" id="tab_logic">
+							<thead>
+								<tr>
+									<th class="text-center">
+										#
+									</th>
+									<th class="text-center">
+										Type
+									</th>
+									<th class="text-center">
+										Value
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id='addr0'>
+									<td>
+										1
+									</td>
+									<td>
+										<input type="text" name='type0'  placeholder='Type' class="form-control"/>
+									</td>
+									<td>
+										<input type="text" name='value0' placeholder='Value' class="form-control"/>
+									</td>
+			
+								</tr>
+			                    <tr id='addr1'></tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<a onClick="pageScroll()" id="add_row" class="pull-left">Add</a><a id='delete_row' class="pull-right">Delete</a>
+			
+				<!-----JS for "Add" button - start----------->
+				<script>
+					function pageScroll() {			
+				    	main.scrollBy(0,50); // horizontal and vertical scroll increments
+					}
+				</script>
+				<!------JS for "Add" button - finish--------->
+			</div>
+			
+
+
+
+
+        
+        
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Add</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

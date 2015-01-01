@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../assets/stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="../../assets/stylesheets/scopetheme.css" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">Settings</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div style="margin-top:80px; padding:10px 30px;;" class="container">
+		<div id="ContactsBin" class="row">
+		
+		<div id="UsersList" class="col-sm-4">	
+			<div class="span4 panel panel-default">
+				  <!-- Default panel contents -->
+				  <div class="panel-heading">Contacts</div>				
+				  <!-- List group -->
+				  <ul style="max-height:350px; overflow:auto; overflow-x: hidden;" class="list-group">
+				    <li class="list-group-item">Oliver Garcia</li>
+				    <li class="list-group-item">Joshua Stowers</li>
+				    <li class="list-group-item">Lawrence Stowers</li>
+				    <li class="list-group-item">Lleane Rodriguez</li>
+				    <li class="list-group-item">Evan Gray</li>
+				    <li class="list-group-item">Batman</li>
+				    <li class="list-group-item">Will Smith</li>
+				    
+				    <li class="list-group-item">Joe Biden</li>
+				    <li class="list-group-item">Aretha Franklin</li>
+				    <li class="list-group-item">Cho Chang</li>
+				    <li class="list-group-item">Spiderman</li>
+				    <li class="list-group-item">Christopher Robin</li>
+				    <li class="list-group-item">Nagisa Isa</li>
+				    <li class="list-group-item">William Tell</li>
+				  </ul>
+				<div class="panel-footer">
+					<!--<button type="button" class="btn btn-danger">Delete</button>-->
+					<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#addContactModal">New</button>
+				</div>
+
+			</div>			
+		</div>
+
+
+
+
+
+		<div id="UsersInfo" class="col-sm-8">	
+			<div class="span4 panel panel-default">
+				  <!-- Default panel contents -->
+				  <div class="panel-heading">Info</div>
+
+					
+					  <!-- List group -->
+					  <ul style="max-height:350px; overflow: auto;overflow-x: hidden;" class="list-group">
+					  
+				  		<div class="panel-body">
+				  			<div class="row">
+				  				<div class="col-xs-8">
+					  				<h3>Contact Name</h3>
+					  				<p>Notes. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p>
+				  				</div>
+					  			<div class="col-xs-4">
+						  			<img style="height:120px; border-radius:45px;" class="pull-right" src="http://johnnycat.files.wordpress.com/2010/03/dude2.jpg" alt="...">						  			</div>
+						  	</div>	  		
+					  	</div>					  
+					  
+					    <a data-toggle="modal" data-target="#addContactModal"><li class="list-group-item"><b>Email: </b>stowers.joshua@live.comm</li></a>
+					    <li class="list-group-item"><b>Email: </b>stowers.joshua@Gmail.com</li>				    
+					    <li class="list-group-item"><b>Phone: </b>(210) 846 3998</li>
+					    <li class="list-group-item"><b>Mobile: </b>(210) 693 0701</li>					    
+					    <li class="list-group-item"><b>Address: </b>1830 Palmer View</li>	
+					    <li class="list-group-item"><b>Company: </b>SquareSuits</li>
+					  </ul>
+					  
+					  
+					<div class="panel-footer">
+						<!--<button type="button" class="btn btn-danger">Delete</button>-->
+						<button type="button" class="btn btn-danger btn-sm">Delete</button>
+					</div>
+			
+			</div>
+			
+		</div><!--/#UsersInfo-->
+
+		</div><!--/.row-->
+    </div><!-- /.container -->
+
+
+
+
+<!-- New Contact Modal -->
+<div class="modal fade" id="addContactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" >Add Contact</h4>
+      </div>
+      <div class="modal-body">
+        ...
+        
+        
+        
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Add</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../../javascripts/bootstrap.js"></script>
+  </body>
+</html>

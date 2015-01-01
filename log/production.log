@@ -1,0 +1,17 @@
+Migrating to CreateContacts (20140208212147)
+Migrating to AddMidNameToUsers (20140212144459)
+Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: ALTER TABLE `users` ADD `midName` varchar
+Migrating to AddMidNameToUsers (20140212144459)
+Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: ALTER TABLE `users` ADD `midName` varchar
+Migrating to AddMidNameToUsers (20140212144459)
+Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: ALTER TABLE `users` ADD `midName` varchar
+Migrating to AddMidNameToContacts (20140212144736)
+Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: ALTER TABLE `contacts` ADD `midName` varchar
+Migrating to AddMidNameToContacts (20140212144736)
+Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: ALTER TABLE `contacts` ADD `midName` varchar
+Migrating to AddMidNameToContacts (20140212144736)
+Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: ALTER TABLE `contacts` ADD `midName` varchar
+Migrating to AddMidNameToContacts (20140212145431)
+Migrating to AddGroupIdToContacts (20140216183557)
+Migrating to AddMidNameToContacts (20140216184354)
+Migrating to RemoveColumnGroupIdFromContacts (20140216213338)
